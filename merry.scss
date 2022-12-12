@@ -1,0 +1,109 @@
+/*-- scss:defaults --*/
+
+$theme-red: #C63C3E;
+$theme-lightgreen: #52963E;
+$theme-darkgreen: #245715;
+$theme-yellow: #FFB801;
+$theme-beige: #F5EACE;
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+$body-bg: $theme-beige;
+$link-color: $theme-lightgreen;
+$code-color: $theme-lightgreen;
+$body-color: $theme-darkgreen;
+$presentation-heading-color: $theme-red;
+
+/*-- scss:rules --*/
+
+@mixin center-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.theme-title:not(.slide-background) {
+  background-image:
+    url('../../../../../assets/glitter-full.svg'),
+    url('../../../../../assets/barries-left.svg'),
+    url('../../../../../assets/barries-right.svg'),
+    url('../../../../../assets/ball.svg'),
+    url('../../../../../assets/candycane.svg');
+  background-size:
+    cover,
+    20%,
+    20%,
+    20%,
+    20%;
+  background-position:
+    center,
+    2% 10%,
+    98% 10%,
+    90% 90%,
+    10% 90%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.theme-title > .theme1 {
+  font-family: 'Jua', sans-serif;
+  font-size: 80px;
+  color: $theme-red;
+
+  @include center-text;
+  top: 50%;
+  left: 50%;
+}
+
+.theme-bullets > .theme1 {
+  @include center-text;
+  top: 30%;
+  left: 30%;
+}
+
+.theme-bullets > .theme2 {
+  @include center-text;
+  top: 30%;
+  left: 70%;
+}
+
+.theme-ball {
+  background-image: url('../../../../../assets/ball.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-candycane {
+  background-image: url('../../../../../assets/candycane.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-mitten-left {
+  background-image: url('../../../../../assets/mitten-left.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-mitten-right {
+  background-image: url('../../../../../assets/mitten-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-presents {
+  background-image: url('../../../../../assets/presents.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-sock-green {
+  background-image: url('../../../../../assets/sock-green.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.theme-sock-red {
+  background-image: url('../../../../../assets/sock-red.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
